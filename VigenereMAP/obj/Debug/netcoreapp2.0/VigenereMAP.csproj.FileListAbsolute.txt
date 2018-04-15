@@ -1,0 +1,11 @@
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\bin\Debug\netcoreapp2.0\VigenereMAP.deps.json
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\bin\Debug\netcoreapp2.0\VigenereMAP.runtimeconfig.json
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\bin\Debug\netcoreapp2.0\VigenereMAP.runtimeconfig.dev.json
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\bin\Debug\netcoreapp2.0\VigenereMAP.dll
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\bin\Debug\netcoreapp2.0\VigenereMAP.pdb
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.csprojResolveAssemblyReference.cache
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.csproj.CoreCompileInputs.cache
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.AssemblyInfoInputs.cache
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.AssemblyInfo.cs
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.dll
+C:\Users\home\source\repos\VigenereMAP\VigenereMAP\obj\Debug\netcoreapp2.0\VigenereMAP.pdb

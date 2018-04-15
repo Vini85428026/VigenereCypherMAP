@@ -1,0 +1,79 @@
+﻿@model VigenereMAP.Models.IndexModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row" style="margin-top:7em">
+    <div class="col-md-12">
+        <div class="panel-body">
+            <form class="form-horizontal" method="post" role="form" asp-action="CypherRequest" asp-controller="Home">
+                <div class="row">
+                    <div class="col-md-2  col-md-offset-1">
+                        <label for="entrada" class="form-control">Valor de Entrada</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input asp-for="@Model.inputValue" type="text" class="form-control" name="inputValue" id="inputValueField" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-1">
+                        <label for="entrada" class="form-control">Chave para Entrada</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input asp-for="@Model.key" type="text" class="form-control" name="key" id="inputKeyField" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2  col-md-offset-1">
+                        <label for="entrada" class="form-control">Opções</label>
+                    </div>
+                    <div class="col-md-8">
+                        <select asp-for="@Model.type" class="form-control" required name="type">
+                            <option value="1">Encriptar</option>
+                            <option value="2">Decriptar</option>
+                        </select>
+                    </div>
+                </div>
+
+                @if (ViewData["result"] != null)
+                {
+                    <div class="row" style="margin-top:1em">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="alert alert-success">@ViewData["result"]</div>
+                        </div>
+                    </div>
+                }
+                
+                <div class="row" style="margin-top:1em">
+                    <div class="col-md-10 col-md-offset-1">
+                        <button style="background:#000 !important;color: #fff !important" class="btn btn-block btn-default" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.getElementById("inputValueField").onkeypress = function (event) { alphaOnly(event) };
+        document.getElementById("inputKeyField").onkeypress = function (event) { alphaOnlyWithoutSpaces(event) };
+    });
+
+    function alphaOnly(event) {
+        var inputValue = event.charCode;
+        if (!(inputValue >= 65 && inputValue <= 120) && (inputValue != 32 && inputValue != 0)) {
+            event.preventDefault();
+        }
+    };
+
+    function alphaOnlyWithoutSpaces(event) {
+        var inputValue = event.charCode;
+        if (!(inputValue >= 65 && inputValue <= 120) && inputValue != "") {
+            event.preventDefault();
+        }
+    };
+</script>
+
